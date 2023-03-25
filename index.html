@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Currículo</title>
+</head>
+<body>
+    <form name="cadastroCurriculo" action="dados.php" method="POST" enctype="multipart/form-data">
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome"/> <br>
+        <label for="endereco">Endereço:</label>
+        <input type="text" name="endereco"/> <br>
+        <label for="email">Email:</label>
+        <input type="email" name="email"/> <br>
+        <label for="sexo">Sexo:</label>
+        <input type="radio" name="sexo" value="Feminino">Feminino
+        <input type="radio" name="sexo" value="Masculino">Masculino<br>
+        <label for="formacao">Formação:</label>
+        <select name="formacao">
+            <option>Técnico</option>
+            <option>Graduação</option>
+            <option>Pós Graduação</option>
+        </select><br>
+        <label for="experiencia">Experiência:</label>
+        <input type="checkbox" name="experiencia[]" value="PHP">
+        <label for="PHP">PHP</label>
+        <input type="checkbox" name="experiencia[]" value="Java">
+        <label for="Java">Java</label>
+        <input type="checkbox" name="experiencia[]" value="Banco de Dados">
+        <label for="Banco de Dados">Banco de dados</label>
+        <input type="checkbox" name="experiencia[]" value="Javascript">
+        <label for="Javascript">Javascript</label><br>
+        <label for="curriculo">Currículo:</label>
+        <input type="file" name="curriculo"><br>
+        <input type="submit" value="Cadastrar">
+
+    </form> 
+</body>
+</html>
